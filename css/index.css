@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+/*Navbar section */
+
+.Navbar {
+    background-color: #00154F;
+    color: #F4AF1B;
+    width: 100%;
+    height: 65px;
+    justify-content: space-between;
+    display:flex;
+    padding-top: 30px;
+}
+
+nav li  {
+    display: inline;
+    margin: 0 40px; 
+    font-size: 1.2em;   
+}
+
+nav a {
+    color: #F4AF1B;
+}
+
+.number {
+    position: relative;
+    left: 100px; /* This will move it 20px to the right */
+    top: -15px;
+    font-size: 1.3em;
+}
+
+
+
+.logo {
+    line-height: 200px;
+}
+
+/* Hero Image Section / Secon Section */
+
+.Background-Image-1st-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(https://refineconcrete.com/wp-content/uploads/2018/03/stamped-concrete-houston-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    padding-top: 300px;
+}
+
+.hero-sec-container {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.Homepage-description{
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+/*----- Footer -----*/
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+    color: #F4AF1B;
+    width: 100vw;
+    /* VW allows the CSS to see the width of the entire browser */
+    overflow: hidden;
+    /* will have issues with document collapsing without overflow hidden */
+    box-sizing: border-box;
+   
+   
+}
+
+.social {
+    display: flex;
+}
+
+.fa {
+    padding: 10px;
+    padding-top: 13px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 7px;
+    font-size: 30px;
+    transition: 300ms;
+}
+
+.fa:hover {
+    color: #0786e0;
+    background: #0a0a0a;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Media Queries */
+
+@media  (max-width: 880px) {
+
+    .number{
+        font-size: 0.9em;
+        float: right;
+        margin-right: 115px;
+    }
+    
+    nav li  {
+        margin: 0 20px; 
+        font-size: 1.1em;   
+    }
+}
